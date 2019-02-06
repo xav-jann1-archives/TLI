@@ -15,3 +15,6 @@ catch (Exception $e) { die('Erreur : ' . $e->getMessage()); }
 
 <p>Si tu veux changer de prénom, <a href="index.php">clique ici</a> pour revenir à la page formulaire.php.</p>
 
+<?php
+    $db->exec("INSERT INTO users VALUES(NULL, 'sam', 'smith', '2000-10-10', 'mail', 'pass')");
+?>
