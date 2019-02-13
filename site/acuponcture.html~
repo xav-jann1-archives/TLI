@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="acuponcture.css">
+		<!-- Style CSS bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	</head>
+
+
+	
+	<header>
+		<title>Acuponcture</title>
+		<nav class="navbar navbar-default sticky-top navbar-expand-sm navbar-light bg-light">
+			<div class="container-fluid">
+			<!-- Pour que le menu soit responsive on utilise collapse:-->
+		 	<button type="button" class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-controls="Toggle navigation">☰
+		              <span class="sr-only"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		    </button>
+		    <!-- Pour que le menu soit responsive:-->
+	 
+		    <a class="navbar-brand" href="acuponcture.html">
+		  	<img src="img/logo.png" alt="logo" id=logo class="d-inline-block align-top img-responsive" /></a>
+		 
+		  <div class="collapse navbar-collapse " id="navbarNav">
+
+		    <ul class="navbar-nav">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="acuponcture.html">Accueil <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="ListePathologies.html">Pathologies</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="Recherche.html">Recherche</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="Compte.html">Compte</a>
+		      </li>
+		    </ul>
+		  </div>
+
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Mail Address" aria-label="Mail Address">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">log in</button>
+			</form>
+			</div>
+		</nav>
+	</header>
+
+
+
+	<body>
+		
+		<div class="corps">
+		 <h1> Bienvenue sur le site d'acupunture </h1>
+		 <h2> sous titre </h2>
+		 <h3> sous sous titre </h3>
+		
+		<p>meilleur site du monde ! <br /> <!-- p pour paragraphe, br pour saut de ligne -->
+		(c'est vrai) </p>
+
+		<div class="container">
+		  <h2>Connectez-vous :</h2>
+		  <form>
+		    <div class="form-group">
+		      <label for="usr">Name:</label>
+		      <input type="text" class="form-control center-block" id="usr">
+		    </div>
+		    <div class="form-group">
+		      <label for="pwd">Password:</label>
+		      <input type="password" class="form-control center-block" id="pwd">
+		     </div>
+		     <div>
+		      <button class="btn btn-primary btn-lg active my-3 my-sm-0" type="submit">se connecter</button>
+		      <button class="btn btn-primary btn-lg active my-3 my-sm-0" type="submit">s'inscrire</button>
+		    </div>
+		  </form>
+		</div>
+<!-- liste -->
+		<ul> 
+			<li> pathologie 1 </li>
+			<li> pathologie 2 </li>
+			<li> pathologie 3 </li>
+		</ul>
+		
+<!-- lien -->
+		<p>lien vers: <a href="acuponcture2.html"> la page 2</a> ? </p>
+
+		<a href="maladies.html" class="btn btn-primary btn-lg active" role="button" title="Vos maladies">Vos maladies</a>
+		<a href="err404.html" class="btn btn-primary btn-lg active" role="button" title="Page 404">Page 404</a>		
+		</div>
+	</body>
+
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-1"> <!--Pour fixer en bas de page navbar-fixed-bottom-->
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase font-weight-bold">Created by :</h5>
+          <p> Blanchin , Briand , Fallourd  , Jannin , Mathou .</p>
+        </div>
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <div class="col-md-6 mb-md-0 mb-3">
+          <h5 class="text-uppercase font-weight-bold">More information</h5>
+          <p><a class=info href="maladies.html"> Page Information </a></p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright CPE Lyon
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  </html>

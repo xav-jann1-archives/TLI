@@ -1,0 +1,91 @@
+@media screen and (min-width:900px){
+  footer
+  {	
+	  position: fixed;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  z-index: 1030;
+
+  }
+}
+  footer
+  {	background-color: #0A71F3;
+	  color: white;
+	  line-height:40%;
+	  max-width: 100%;
+	  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
+  }
+
+body {
+    background-color: black;
+    background: url(img/fond1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+h1{
+text-align: center;
+}
+nav{
+	box-shadow: 5px 2px 10px 3px grey
+}
+
+/* Taille des inputs de connection */
+/*#pwd , #usr{
+	max-height: 30%;
+	max-width: 30%;
+}*/
+
+.container{
+	text-align: center;
+}
+.container1{
+  	text-align: center;
+	max-height: 30%;
+	max-width: 30%;
+}
+  
+.info
+{
+
+	color : #371F57;
+	font-size: 120%;
+}
+
+.name
+{
+	margin-top: 1%;
+
+}
+
+.a
+{
+	text-decoration: none;
+}
+
+
+/*Bootstrap*/
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+  min-height: 100px;
+}
+.navbar-brand>img {
+ height: 100%;
+  width: auto;
+}
+.navbar-nav > li{
+  margin-left:5%;
+  margin-right:5%;
+}
+.navbar ul li {
+	font-size: 180%;
+	color : black;
+	
+}
+
+
+
