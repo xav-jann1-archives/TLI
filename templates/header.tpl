@@ -1,6 +1,6 @@
 <header>
 		
-		<nav class="navbar navbar-default sticky-top navbar-expand-sm navbar-light bg-light">
+		<nav class="navbar sticky-top navbar-default navbar-expand-sm navbar-light bg-light">
 			<div class="container-fluid">
 			<!-- Pour que le menu soit responsive on utilise collapse:-->
 		 	<button type="button" class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-controls="Toggle navigation">☰
@@ -16,9 +16,9 @@
 		 
 		  <div class="collapse navbar-collapse" id="navbarNav">
 
-		    <ul class="navbar-nav">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="acuponcture.php">Accueil <span class="sr-only">(current)</span></a>
+		    <ul class="navbar-nav ">
+		      <li class="nav-item">
+		        <a class="nav-link" href="acuponcture.php">Accueil</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="pathos.php">Pathologies</a>

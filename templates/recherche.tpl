@@ -28,7 +28,7 @@
 		      <input type="text" class="form-control center-block" id="caractéristiques">
 		    </div>
 		    
-		  
+
 		    
 		      <div>
 		      <button class="btn btn-primary btn-lg active my-3 my-sm-0" type="submit">Valider</button>
