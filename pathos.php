@@ -11,13 +11,18 @@
     
     $db = new DB();
 
-    $query = "SELECT `desc` FROM symptome ORDER BY `desc` ASC";
+    $query = "SELECT patho.desc, symptome.desc 
+    FROM symptome
+    JOIN symptPatho ON symptome.idS = symptPatho.idS
+    JOIN patho ON patho.idP = symptPatho.idP
+    ORDER BY patho.desc ASC";
 
     $result = $db->requete($query);
 
-    $tpl->assign('liste', $result);
+
+    $tpl->assign('tableau', $result);
+
 
     $tpl->display("templates/pathos.tpl");
-	
 ?>
   
