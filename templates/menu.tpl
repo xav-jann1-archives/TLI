@@ -2,19 +2,18 @@
 <html>
 <head>
 <title>Menu nul</title>
-<link rel="stylesheet" href="menu_nul.css">
+<link rel="stylesheet" href="css/pathos.css">
 </head>
 <body>
-<h1>test</h1>
 <div class="select">
 <ul>
-    {foreach from=$liste item=machin}
+    {foreach from=$liste item=i}
     <li>	
         <a href="1.html">
 		    <div class="symptome">
-			    <h3>{$machin}</h3>
+			    <h3>{$i[0]}</h3>
 		    </div>
-	    </a>
+	 </a>
     </li>
     {/foreach}
 </ul>

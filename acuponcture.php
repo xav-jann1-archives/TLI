@@ -7,10 +7,6 @@
 	$tpl->setConfigDir('/usr/local/lib/smarty/configs/');
 	$tpl->setCacheDir('/usr/local/lib/smarty/cache/');
 
-    $machin = array('Ben','Tom','Estelle','Xavierlegrosbg');
-
-    $tpl->assign('liste', $machin);
-
-    $tpl->display("menu_nul.tpl");
+    $tpl->display("templates/acuponcture.tpl");
 	
 ?>  

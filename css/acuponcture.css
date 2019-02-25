@@ -40,13 +40,21 @@ nav{
 	max-width: 30%;
 }*/
 
-.container{
-	text-align: center;
-}
+
 .container1{
   	text-align: center;
 	max-height: 30%;
 	max-width: 30%;
+}
+.container_recherches{
+	max-height: 30%;
+	max-width: 30%;
+}
+.container_inscription{
+	text-align: center;
+	max-height: 30%;
+	max-width: 30%;
+
 }
   
 .info
