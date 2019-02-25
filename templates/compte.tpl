@@ -12,26 +12,26 @@
 
 		<div class="container_inscription center-block">
 		  <h1> Inscription :</h1>
-		  <form>
+		  <form action="log.php" method="post">
 		    <div class="form-group">
 		      <label for="name">Nom:</label>
-		      <input type="text" class="form-control center-block" id="name">
+		      <input type="text" class="form-control center-block" id="name" name="name">
 		    </div>
 		    <div class="form-group">
 		      <label for="lname">Prenom:</label>
-		      <input type="text" class="form-control center-block" id="lname">
+		      <input type="text" class="form-control center-block" id="lname" name="lname">
 		    </div>
 		    <div class="form-group">
 		      <label for="Mail">Mail:</label>
-		      <input type="text" class="form-control center-block" id="Mail">
+		      <input type="text" class="form-control center-block" id="Mail" name="Mail">
 		    </div>
 		    <div class="form-group">
 		      <label for="pwd">Mot de passe:</label>
-		      <input type="password" class="form-control center-block" id="pwd">
+		      <input type="password" class="form-control center-block" id="pwd" name="pwd">
 		  </div>
 		  <div class="form-group">
 		      <label for="pwdc">Confimation Mot de passe:</label>
-		      <input type="password" class="form-control center-block" id="pwdc">
+		      <input type="password" class="form-control center-block" id="pwdc" name="pwdc">
 		  </div>
 		  
 		    
