@@ -13,13 +13,19 @@ class DB{
             }
         return $db;
     }
-    public function requete($sql) {
+
+    public function request($sql) {
         $resu = null;
         $db = $this->getDB();
         foreach($db->query($sql) as $row) {
             $resu[] = $row;
         }
         return $resu;
+    }
+
+    public function execRequest($sql) {
+        $db = $this->getDB();
+        $db->exec($sql);
     }
 }
 ?>
