@@ -1,12 +1,14 @@
 <?php
 class DB{
-    private $dbName = 'acupuncture';
-    private $pass = 'password';
-    private $user = 'W-user';
+	private $dbHost = 'localhost';
+	private $dbName = 'acupuncture';
+	private $user = 'root';
+	private $pass = 'toor';
+	
     private function getDB() {
         $db = null;
         try {
-            $db = new PDO('mysql:host=localhost;dbname='.$this->dbName, $this->user, $this->pass,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+            $db = new PDO('mysql:host='.$this->dbHost.';dbname='.$this->dbName, $this->user, $this->pass,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
             }
         catch (Exception $e) {
             die('Erreur : ' . $e->getMessage());
