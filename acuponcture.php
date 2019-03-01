@@ -1,11 +1,11 @@
 <?php
-    require("/usr/local/lib/smarty/libs/Smarty.class.php");
+    require("/var/www/html/TLI/libs/Smarty.class.php");
     $tpl = new Smarty();
 
-	$tpl->setTemplateDir('/usr/local/lib/smarty/templates/');
-	$tpl->setCompileDir('/usr/local/lib/smarty/templates_c/');
-	$tpl->setConfigDir('/usr/local/lib/smarty/configs/');
-	$tpl->setCacheDir('/usr/local/lib/smarty/cache/');
+	$tpl->setTemplateDir('/var/www/html/TLI/smarty/templates/');
+	$tpl->setCompileDir('/var/www/html/TLI/smarty/templates_c/');
+	$tpl->setConfigDir('/var/www/html/TLI/smarty/configs/');
+	$tpl->setCacheDir('/var/www/html/TLI/smarty/cache/');
 
     $tpl->display("templates/acuponcture.tpl");
 	

@@ -7,7 +7,7 @@
 	$tpl->setConfigDir('/usr/local/lib/smarty/configs/');
 	$tpl->setCacheDir('/usr/local/lib/smarty/cache/');
 
-    require_once('resources/DB.php');
+    require_once('class/DB.php');
     
     $db = new DB();
 
