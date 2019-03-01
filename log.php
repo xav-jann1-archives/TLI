@@ -1,9 +1,12 @@
 <?php
-        require_once('resources/DB.php');
+    require_once('class/Database.class.php');
+
+    $db = new DB();
+    $lname = $_POST['lname'];
+    $name = $_POST['name'];
+    $mail = $_POST['Mail'];
+    $pwd = $_POST['pwd'];
     
-        $db = new DB();
-
-
-    $query = "INSERT INTO `users`(`prenom`, `nom`, `date`, `mail`, `password`) VALUES (".$_POST['lname'].",".$_POST['name'].",".date('Y-d-m').",".$_POST['Mail'].",".$_POST['pwd'].")";
-    $db->execRequest($query);
+    $query = "INSERT INTO `users`(`name`, `lname`, `mail`, `password`) VALUES ('$name', '$lname', '$mail', '$pwd')";
+    $db->post($query);
 ?>

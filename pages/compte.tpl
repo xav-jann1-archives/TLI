@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<!--head-->
-	{include file="templates/head.tpl"}
-	<!--head-->
-
 	<body>
-
-	<!--header-->
-	{include file="templates/header.tpl"}
-	<!--header-->
-
 		<div class="container_inscription center-block">
 		  <h1> Inscription :</h1>
 		  <form action="log.php" method="post">
@@ -41,7 +32,4 @@
 		    
 		  </form>
 		</div>
-		<!--footer-->
-		{include file="templates/footer.tpl"}
-		<!--footer-->
 	</body>

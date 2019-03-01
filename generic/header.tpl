@@ -11,23 +11,23 @@
 		    </button>
 		    <!-- Pour que le menu soit responsive:-->
 	 
-		    <a class="navbar-brand" href="acuponcture.php">
+		    <a class="navbar-brand" href="index.php?page=home">
 		  	<img src="img/logo.png" alt="logoacuponcture" id=logo class="d-inline-block align-top img-responsive" /></a>
 		 
 		  <div class="collapse navbar-collapse" id="navbarNav">
 
 		    <ul class="navbar-nav ">
 		      <li class="nav-item">
-		        <a class="nav-link" href="acuponcture.php">Accueil</a>
+		        <a class="nav-link" href="index.php?page=home">Accueil</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="pathos.php">Pathologies</a>
+		        <a class="nav-link" href="index.php?page=pathos">Pathologies</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="recherche.php">Recherche</a>
+		        <a class="nav-link" href="index.php?page=recherche">Recherche</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="compte.php">Compte</a>
+		        <a class="nav-link" href="index.php?page=compte">Compte</a>
 		      </li>
 		    </ul>
 		  </div>

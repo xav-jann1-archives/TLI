@@ -1,14 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.33, created on 2019-03-01 19:50:46
+  from '/var/www/html/TLI/templates/home.tpl' */
 
-<html lang="fr">
-	<!--head-->
-		{include file="templates/head.tpl"}
-		<!--head-->
-
-	<body>
-		<!--header-->
-		{include file="templates/header.tpl"}
-		<!--header-->
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5c797f06478a91_97560378',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '3ba49d129fb411599e404e3718f4d7510f0b51d6' => 
+    array (
+      0 => '/var/www/html/TLI/templates/home.tpl',
+      1 => 1551466236,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5c797f06478a91_97560378 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 		<div class="corps">
 		 <h1> Bienvenue sur le site d'acupunture </h1>
 		 <h2> sous titre </h2>
@@ -47,9 +60,5 @@
 
 		<a href="maladies.html" class="btn btn-primary btn-lg active" role="button" title="Vos maladies">Vos maladies</a>
 		<a href="err404.html" class="btn btn-primary btn-lg active" role="button" title="Page 404">Page 404</a>		
-		</div>
-		<!--footer-->
-		{include file="templates/footer.tpl"}
-		<!--footer-->
-  </body>
-  </html>
+		</div><?php }
+}
