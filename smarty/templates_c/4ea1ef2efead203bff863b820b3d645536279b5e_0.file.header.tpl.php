@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-02 16:16:56
-  from '/var/www/html/TLI/generic/header.tpl' */
+/* Smarty version 3.1.33, created on 2019-03-02 18:01:53
+  from '/var/www/html/TLI/pages/include/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c7a9e685f02e4_66331263',
+  'unifunc' => 'content_5c7ab701638808_73597318',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '22f42f770b0f0e402cc2575a7d8e2b8106bb5b36' => 
+    '4ea1ef2efead203bff863b820b3d645536279b5e' => 
     array (
-      0 => '/var/www/html/TLI/generic/header.tpl',
-      1 => 1551539805,
+      0 => '/var/www/html/TLI/pages/include/header.tpl',
+      1 => 1551546109,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c7a9e685f02e4_66331263 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c7ab701638808_73597318 (Smarty_Internal_Template $_smarty_tpl) {
 ?><header>
 		
 		<nav class="navbar sticky-top navbar-default navbar-expand-sm navbar-light bg-light">
@@ -33,24 +33,29 @@ function content_5c7a9e685f02e4_66331263 (Smarty_Internal_Template $_smarty_tpl)
 		              <span class="icon-bar"></span>
 		    </button>
 		    <!-- Pour que le menu soit responsive:-->
-	 
-		    <a class="navbar-brand" href="page=home">
+				
+		    <a class="navbar-brand" href="?page=home&lang=<?php echo $_smarty_tpl->tpl_vars['data']->value['lang'];?>
+">
 		  	<img src="img/logo.png" alt="logoacuponcture" id=logo class="d-inline-block align-top img-responsive" /></a>
 		 
 		  <div class="collapse navbar-collapse" id="navbarNav">
 
 		    <ul class="navbar-nav ">
 		      <li class="nav-item">
-		        <a class="nav-link" href="index.php?page=home">Accueil</a>
+		        <a class="nav-link" href="?page=home&lang=<?php echo $_smarty_tpl->tpl_vars['data']->value['lang'];?>
+">Accueil</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="index.php?page=pathos">Pathologies</a>
+		        <a class="nav-link" href="?page=pathos&lang=<?php echo $_smarty_tpl->tpl_vars['data']->value['lang'];?>
+">Pathologies</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="index.php?page=recherche">Recherche</a>
+		        <a class="nav-link" href="?page=recherche&lang=<?php echo $_smarty_tpl->tpl_vars['data']->value['lang'];?>
+">Recherche</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="index.php?page=register">Compte</a>
+		        <a class="nav-link" href="?page=register&lang=<?php echo $_smarty_tpl->tpl_vars['data']->value['lang'];?>
+">Compte</a>
 		      </li>
 		    </ul>
 		  </div>

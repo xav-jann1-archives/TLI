@@ -10,24 +10,24 @@
 		              <span class="icon-bar"></span>
 		    </button>
 		    <!-- Pour que le menu soit responsive:-->
-	 
-		    <a class="navbar-brand" href="index.php?page=home">
+				
+		    <a class="navbar-brand" href="?page=home&lang={$data.lang}">
 		  	<img src="img/logo.png" alt="logoacuponcture" id=logo class="d-inline-block align-top img-responsive" /></a>
 		 
 		  <div class="collapse navbar-collapse" id="navbarNav">
 
 		    <ul class="navbar-nav ">
 		      <li class="nav-item">
-		        <a class="nav-link" href="index.php?page=home">Accueil</a>
+		        <a class="nav-link" href="?page=home&lang={$data.lang}">Accueil</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="index.php?page=pathos">Pathologies</a>
+		        <a class="nav-link" href="?page=pathos&lang={$data.lang}">Pathologies</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="index.php?page=recherche">Recherche</a>
+		        <a class="nav-link" href="?page=recherche&lang={$data.lang}">Recherche</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="index.php?page=compte">Compte</a>
+		        <a class="nav-link" href="?page=register&lang={$data.lang}">Compte</a>
 		      </li>
 		    </ul>
 		  </div>

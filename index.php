@@ -1,7 +1,8 @@
 <?php
+
 session_start();
 
-$page = "home";
+include_once "config.php";
 
 function microtime_float()
 {
@@ -9,32 +10,23 @@ function microtime_float()
     return ((float)$usec + (float)$sec);
 }
 
-function pageSelect()
-	{
-		if (isset($_GET["page"]))
-		{
-            global $page;
-			$page = ctype_alpha($_GET["page"]) ? strtolower($_GET["page"]) : '404';
-            $page = file_exists("pages/".$page.".tpl") ? $page : "404";
-		}
-	}
-
 $time_start = microtime_float();
+//Database gest
+include_once CLASS_DIR."/Database.class.php";
+$DB = new DB();
 
-include_once("class/Database.class.php");
-require("/var/www/html/TLI/libs/Smarty.class.php");
-
-pageSelect();
+//Smarty
+require SOURCE_DIR."/libs/Smarty.class.php";
 
 $tpl = new Smarty();
 
-$tpl->setTemplateDir('/var/www/html/TLI/smarty/templates/');
-$tpl->setCompileDir('/var/www/html/TLI/smarty/templates_c/');
-$tpl->setConfigDir('/var/www/html/TLI/smarty/configs/');
-$tpl->setCacheDir('/var/www/html/TLI/smarty/cache/');
+$tpl->setTemplateDir(SOURCE_DIR.'/smarty/templates/');
+$tpl->setCompileDir(SOURCE_DIR.'/smarty/templates_c/');
+$tpl->setConfigDir(SOURCE_DIR.'/smarty/configs/');
+$tpl->setCacheDir(SOURCE_DIR.'/smarty/cache/');
 
-$tpl->assign('page', $page);
-$tpl->display("frame.tpl");
+//page router
+require_once "router.php";
 
 $time_end = microtime_float();
 $time = $time_end - $time_start;

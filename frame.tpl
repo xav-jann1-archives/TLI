@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-
+{if $page == "register"}
+{include file="class/Register.class.php"}
+{/if}
 <html lang="fr">
 	<!--head-->
 		{include file="generic/head.tpl"}
