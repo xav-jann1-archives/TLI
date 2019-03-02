@@ -20,24 +20,14 @@ class DB{
 
     public function get($sql) {
         $resu = null;
-        try {
-            foreach($this->db->query($sql) as $row) {
-                $resu[] = $row;
-            }
-            return $resu;
+        foreach($this->db->query($sql) as $row) {
+            $resu[] = $row;
         }
-        catch(PDOException $e) {
-            echo $sql . "<br>" . $e->getMessage();
-        }
+        return $resu;
     }
 
     public function post($sql) {
-        try {
-            $this->db->exec($sql);
-        }
-        catch(PDOException $e) {
-            echo $sql . "<br>" . $e->getMessage();
-        }
+        $this->db->exec($sql);
     }
 }
 ?>

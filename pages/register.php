@@ -9,7 +9,7 @@ $error_mail = '';
 
 if (isset($_POST["sent"])) { //TODO test de sent
     
-	include_once("./class/Database.class.php");
+	include_once(CLASS_DIR . "/Database.class.php");
 
 	$db = new DB();
 
@@ -120,15 +120,11 @@ if (isset($_POST["sent"])) { //TODO test de sent
 }
 
 if ($register_flag) {
-    $db = new DB();
-    echo "envoi</br>";
-    $query = "INSERT INTO `users`(`name`, `lname`, `mail`, `password`) VALUES ('$form_name', '$form_lname', '$form_mail', '$form_pwd')";
+	$db = new DB();
+	$hash_pass = hash('sha256', $form_pass);
+    $query = "INSERT INTO `users`(`name`, `lname`, `mail`, `password`) VALUES ('$form_name', '$form_lname', '$form_mail', '$hash_pass')";
     $db->post($query);
 }
-else {
-    echo "pas de flag</br>";
-}
-echo "[$check_name ,  $check_pass ,  $check_lname  , $check_mail]";
 
 $form['error_name'] = $error_name;
 $form['error_lname'] = $error_lname;

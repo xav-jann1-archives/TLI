@@ -12,6 +12,7 @@ function display_all($head, $header, $footer) {
 	//prepare data sent to tpl
 	$data['lang'] = $lang;
 	$tpl->assign('data', $data);
+	$tpl->assign('session', $_SESSION);
 
 	include PAGES_DIR . '/' . GENERIC_DIR . "/$head.tpl";
 	$tpl->display(PAGES_DIR . '/' . GENERIC_DIR . "/$header.tpl");
