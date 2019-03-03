@@ -132,7 +132,4 @@ $form['error_mail'] = $error_mail;
 $form['error_pass'] = $error_pass;
 $tpl->assign('form', $form);
 
-// display template
-display_all('head', 'header', 'footer');
-
 ?>
