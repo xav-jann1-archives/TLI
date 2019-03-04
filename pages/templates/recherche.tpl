@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html>
-	<!--head-->
-	{include file="templates/head.tpl"}
-	<!--head-->
 	<body>
 		<title>Recherche Pathologie</title>
-	
-		<!--header-->
-		{include file="templates/header.tpl"}
-		<!--header-->
-		 
-		
-
 		<div class="container_recherches">
 		  <h2> critères :</h2>
 		  <form>
@@ -36,9 +24,4 @@
 		    
 		  </form>
 		</div>
-		<!--footer-->
-		{include file="templates/footer.tpl"}
-		<!--footer-->
-
 	</body>
-
