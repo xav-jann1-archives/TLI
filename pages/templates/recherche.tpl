@@ -17,8 +17,6 @@
 		    
 		  </form>
 		</div>
-		<div class="info"> Veuillez cliquer sur le nom de la pathologies pour voir les symptômes associés</div>
-
 	</body>
 
 	
