@@ -3,7 +3,7 @@
     
     $db = new DB();
 
-    $query = "SELECT patho.desc, symptome.desc 
+    $query = "SELECT patho.desc, symptome.desc, patho.idP 
     FROM symptome
     JOIN symptPatho ON symptome.idS = symptPatho.idS
     JOIN patho ON patho.idP = symptPatho.idP
