@@ -8,7 +8,7 @@ if (isset($_POST['sent'])) {
     $name = $_POST['name'];
     $pwd = $_POST['pwd'];
 
-    include_once CLASS_DIR . "Database.class.php";
+    include_once CLASS_DIR . "/Database.class.php";
 
     if (strlen($name) > 0 && strlen($pwd) > 0) {
 
@@ -18,7 +18,7 @@ if (isset($_POST['sent'])) {
             $query = "SELECT * FROM `users` WHERE name = '$name'";
             $user = $db->get($query)[0];
 
-            if ($user['name'] == $name && $user['password'] != hash('sha256', $pwd)) {
+            if ($user['name'] == $name && $user['password'] == hash('sha256', $pwd)) {
                 $_SESSION['name'] = $name;
             }
             else {
