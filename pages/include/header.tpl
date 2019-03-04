@@ -34,13 +34,17 @@
                 </ul>
             </div>
 
-            <form class="form-inline">
-                <label for="mail">@:</label>
-                <input class="form-control mr-sm-2" type="text" placeholder="Mail Address" aria-label="Mail Address"
-                    id="mail">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">log in</button>
-                <a href="?page=logout&lang={$data.lang}" class="btn btn-primary btn-lg active" role="button" title="log_out">Log out</a>
-            </form>
+            <div class="form-inline">
+
+                {if !isset($session.name)}
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</button>
+                {/if}
+
+                {if isset($session.name)}
+                <div class="form-control mr-sm-2" id=name"> {$session.name} </div>
+                <a href="?page=logout&lang={$data.lang}" class="btn btn-outline-success my-2 my-sm-0" role="button" title="log_out">Log out</a>
+                {/if} 
+            </div>
         </div>
     </nav>
 </header>
