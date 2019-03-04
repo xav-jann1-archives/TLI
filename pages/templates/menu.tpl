@@ -1,4 +1,5 @@
 <div class="container_pathologies">
+	<div class="info"> Voici la liste des pathologies, veuillez cliquer sur l'une d'elles pour afficher les symptomes associés.</div>
 	<!--smarty-->
 	{assign var="prec" value="null"}
 	{foreach from=$tableau item=$i}
