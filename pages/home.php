@@ -2,12 +2,11 @@
 
 $check_error = 1;
 $error = '';
-if (isset($_POST['name'])) {
 
-$name = $_POST['name'] ?$_POST['name']: "";
-$pwd = $_POST['pwd'];
-}
 if (isset($_POST['sent'])) {
+
+    $name = $_POST['name'];
+    $pwd = $_POST['pwd'];
 
     include_once CLASS_DIR . "Database.class.php";
 
