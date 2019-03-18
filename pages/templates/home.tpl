@@ -5,11 +5,11 @@
         <form action="index.php?page=home&lang={$data['lang']}" method="post">
             <div class="form-group">
                 {$form.error}</br>
-                <label for="usr">Name:</label>
+                <label for="usr">Nom:</label>
                 <input type="text" class="form-control center-block" id="name" name='name'>
             </div>
             <div class="form-group">
-                <label for="pwd">Password:</label>
+                <label for="pwd">Mot de passe:</label>
                 <input type="password" class="form-control center-block" id="pwd" name='pwd'>
             </div>
             <div>
