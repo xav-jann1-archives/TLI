@@ -29,5 +29,12 @@ class DB{
     public function post($sql) {
         $this->db->exec($sql);
     }
+
+    public function get_2($query, $values) {
+        $resu = null;
+        $rest = $this->db->prepare($query);
+        $rest->execute($values);
+        return $rest->fetchAll();
+    }
 }
 ?>
