@@ -40,13 +40,13 @@
 
                 {if !isset($session.name)}
                 
-                <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-backdrop="static" data-target="#connexion_modal">Log in</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-backdrop="static" data-target="#connexion_modal">Connexion</button>
                 
                 {/if}
 
                 {if isset($session.name)}
                 <div class="form-control mr-sm-2" id=name"> {$session.name} </div>
-                <a href="?page=logout&lang={$data.lang}" class="btn btn-outline-success my-2 my-sm-0" role="button" title="log_out">Log out</a>
+                <a href="?page=logout&lang={$data.lang}" class="btn btn-outline-success my-2 my-sm-0" role="button" title="log_out">Déconnexion</a>
                 {/if} 
             </div>
         </div>
