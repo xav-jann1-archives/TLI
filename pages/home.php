@@ -20,6 +20,8 @@ if (isset($_POST['sent'])) {
 
             if ($user['name'] == $name && $user['password'] == hash('sha256', $pwd)) {
                 $_SESSION['name'] = $name;
+                $_SESSION['lname'] = $user['lname'];
+                $_SESSION['mail'] = $user['mail'];
             }
             else {
                 $check_error = -3;

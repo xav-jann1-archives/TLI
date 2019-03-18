@@ -21,4 +21,15 @@
 
     </div>
     {/if}
+    {if isset($session.name)}
+    <div class="container">
+    <h1>Bienvenue Docteur {$session.name}</h1> 
+    <img class="rounded mx-auto d-block" src="img/footer.jpg" alt="image acupuncture" />
+    <blockquote class="blockquote text-center">
+            <p class="mb-0">"La santé est le trésor le plus précieux et le plus facile à perdre. C'est cependant le plus mal gardé.".</p>
+            <div class="blockquote-footer">Chauvot de Bauchêne </div>
+    </blockquote>
+    <h2 class="text-center"> Vous pouvez désomais faire des <a href="?page=recherche&lang={$data.lang}">recherches</a>.</h2>
+    </div>
+    {/if}
 </div>

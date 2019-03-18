@@ -91,6 +91,17 @@ nav{
 	font-style: italic;
 }
 
+.deny{
+	text-align: center;
+	margin : 2%;
+	padding-bottom: 18px;
+	font-size: 3em;
+	line-height: 2;
+	border-style: hidden;
+	border-radius: 5px;
+	background-color: rgba(255, 235, 205, 0.8);
+}
+
 /*Bootstrap*/
 .navbar-brand {
   padding: 0px; /* firefox bug fix */

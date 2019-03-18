@@ -7,7 +7,7 @@
 		  <h1> Inscription :</h1>
 		  <form action="index.php?page=register&lang={$data['lang']}" method="post">
 		    <div class="form-group">
-		      <label for="name">Nom:</label>
+		      <label for="name">Nom (qui sera le nom de connexion):</label>
 					<input type="text" class="form-control center-block" id="name" name="name">
 					{$form.error_name}
 		    </div>
@@ -43,24 +43,25 @@
 
 <!--  [ Informationation Compte si connecte ] -->
 		{if isset($session.name)}
-	<form>
+	<form class="container">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Nom de compte</label>
       <input type="name" class="form-control" placeholder={$session.name} readonly>
     </div>
+
     <div class="form-group col-md-6">
       <label for="inputPassword">Prenom</label>
-      <input type="password" class="form-control" placeholder={$session.name} readonly>
+      <input type="lname" class="form-control" placeholder={$session.lname} readonly>
     </div>
   </div>
   <div class="form-group">
-    <label for="inputAddress">Addresse</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    <label for="inputAddress">Adresse mail</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder={$session.mail}>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
+      <label for="inputCity">Ville</label>
       <input type="text" class="form-control" id="inputCity">
     </div>
     <div class="form-group col-md-4">
