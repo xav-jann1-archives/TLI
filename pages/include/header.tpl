@@ -40,7 +40,11 @@
 
                 {if !isset($session.name)}
                 
+<<<<<<< HEAD
                 <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-backdrop="static" data-target="#connexion_modal">Connexion</button>
+=======
+                <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-backdrop="static" data-target="#connexion_modal">connexion</button>
+>>>>>>> c8c745add05d2973ba2be608a8dfd950d21bb608
                 
                 {/if}
 
