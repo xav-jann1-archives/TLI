@@ -38,7 +38,7 @@
 
                 {if !isset($session.name)}
                 
-                <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#connexion_modal">Log in</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-backdrop="static" data-target="#connexion_modal">Log in</button>
                 
                 {/if}
 
