@@ -1,5 +1,5 @@
 <header>
-
+    {include file='../templates/popup_connexion.tpl'}
     <nav class="navbar sticky-top navbar-default navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid">
             <!-- Pour que le menu soit responsive on utilise collapse:-->
@@ -37,7 +37,9 @@
             <div class="form-inline">
 
                 {if !isset($session.name)}
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</button>
+                
+                <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#connexion_modal">Log in</button>
+                
                 {/if}
 
                 {if isset($session.name)}
