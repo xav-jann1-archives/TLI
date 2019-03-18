@@ -1,5 +1,6 @@
 	<body>
 		<title>Recherche Pathologie</title>
+		{if isset($session.name)}
 		<div class="container_recherches">
 		  <h2> critères :</h2>
 		  <form action="index.php?page=recherche&lang={$data['lang']}" method="post">
@@ -20,6 +21,10 @@
 		{if isset($tableau)}
 		<div class="info">Résultat de la recherche</div>
 		{include file="pages/templates/menu.tpl"}
+		{/if}
+		{else}
+		Vous devez vous connecter pour acceder à la recherche.
+		<button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#connexion_modal">Log in</button>
 		{/if}
 	</body>
 
