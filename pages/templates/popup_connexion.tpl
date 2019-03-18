@@ -21,11 +21,7 @@
               <input type="text" class="form-control center-block" id="name" name='name'>
           </div>
           <div class="form-group">
-<<<<<<< HEAD
               <label for="pwd">Mot de Passe:</label>
-=======
-              <label for="pwd">Mot de passe:</label>
->>>>>>> c8c745add05d2973ba2be608a8dfd950d21bb608
               <input type="password" class="form-control center-block" id="pwd" name='pwd'>
           </div>
           <div class="modal-footer">
