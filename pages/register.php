@@ -72,12 +72,12 @@ if (isset($_POST["sent"])) { //TODO test de sent
 		if (strlen($form_pass) >= 8) {
 			if (!(preg_match('/[A-Za-z]/', $form_pass) && preg_match('/[0-9]/', $form_pass))) {
 				$check_pass = -3;
-				$error_pass = "Veulliez mettre au moins une lettre (majuscule ou minuscule) et un chiffre.";
+				$error_pass = "Veuillez mettre au moins une lettre (majuscule ou minuscule) et un chiffre.";
 			}
 		}
 		else {
 			$check_pass = -2;
-			$error_pass = "Le mot de passe doit fire au moins 8 caractères";
+			$error_pass = "Le mot de passe doit faire au moins 8 caractères";
 		}
 	}
 	else {

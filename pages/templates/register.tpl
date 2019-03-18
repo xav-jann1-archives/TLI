@@ -8,30 +8,29 @@
 		  <form action="index.php?page=register&lang={$data['lang']}" method="post">
 		    <div class="form-group">
 		      <label for="name">Nom:</label>
-					<input type="text" class="form-control center-block" id="name" name="name">
+					<input type="text" class="form-control center-block" id="name" name="name" pattern="/^(?=.*[A-z])\S{2,32}$/" required>
 					{$form.error_name}
 		    </div>
 		    <div class="form-group">
 		      <label for="lname">Prenom:</label>
-					<input type="text" class="form-control center-block" id="lname" name="lname">
+					<input type="text" class="form-control center-block" id="lname" name="lname" pattern="/^(?=.*[A-z])\S{2,32}$/" required>
 					{$form.error_lname}
 		    </div>
 		    <div class="form-group">
 		      <label for="Mail">Mail:</label>
-					<input type="text" class="form-control center-block" id="mail" name="mail">
+					<input type="email" class="form-control center-block" id="mail" name="mail" required>
 					{$form.error_mail}
 		    </div>
 		    <div class="form-group">
 		      <label for="pwd">Mot de passe:</label>
-					<input type="password" class="form-control center-block" id="pwd" name="pwd">
+					<input type="password" class="form-control center-block" id="pwd" name="pwd" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])\S{8,32}$/" required>
 					{$form.error_pass}
 		  </div>
 		  <div class="form-group">
 		      <label for="pwdc">Confimation Mot de passe:</label>
-		      <input type="password" class="form-control center-block" id="pwdc" name="pwdc">
+		      <input type="password" class="form-control center-block" id="pwdc" name="pwdc" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])\S{8,32}$/" required>
 		  </div>
 		  
-		    
 		      <div>
 					<input type="hidden" name="sent" value="sent">
 		      <button class="btn btn-primary btn-lg active my-3 my-sm-0" type="submit">s'inscrire</button>
@@ -41,7 +40,7 @@
 		</div>
 		{/if}
 
-<!--  [ Informationation Compte si connecte ] -->
+<!--  [ Information Compte si connecte ] -->
 		{if isset($session.name)}
 	<form>
   <div class="form-row">
