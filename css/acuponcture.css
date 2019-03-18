@@ -58,8 +58,8 @@ nav{
 	max-width: 80%;
 }
 .container_recherches{
-	max-height: 30%;
-	max-width: 30%;
+	max-width: 40%;
+	margin-left: 5%;
 }
 .container_inscription{
 	text-align: center;

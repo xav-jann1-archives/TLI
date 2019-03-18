@@ -2,7 +2,7 @@
 		<title>Recherche Pathologie</title>
 		{if isset($session.name)}
 		<div class="container_recherches">
-		  <h2> critères :</h2>
+		  <h2> Critères :</h2>
 		  <form action="index.php?page=recherche&lang={$data['lang']}" method="post">
 		    <div class="form-group">
 		      <label for="Symptome">Symptome:</label>
@@ -18,9 +18,11 @@
 		  </form>
 		</div>
 
-		{if isset($tableau)}
-		<div class="info">Résultat de la recherche</div>
+		{if isset($tableau) && sizeof($tableau) neq 0}
+		<div class="container_recherches">Résultat de la recherche</div>
 		{include file="pages/templates/menu.tpl"}
+		{elseif isset($tableau) && sizeof($tableau) eq 0}
+		<div class="container_recherches">Aucune correspondance avec votre recheche</div>
 		{/if}
 		{else}
 		<div class="deny">Vous devez vous connecter pour acceder à la recherche.</br>
