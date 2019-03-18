@@ -1,5 +1,7 @@
 <header>
+    {if !isset($session.name)}
     {include file='../templates/popup_connexion.tpl'}
+    {/if}
     <nav class="navbar sticky-top navbar-default navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid">
             <!-- Pour que le menu soit responsive on utilise collapse:-->
