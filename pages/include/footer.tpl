@@ -14,7 +14,7 @@
 
         <div class="col-6 mb-0 mb-3">
           <h3 class="text-uppercase font-weight-bold">More information</h3>
-          <p><a class=info href="page_info.php"> Page Information </a></p>
+          <p><a class=info href="?page=page_info&lang={$data.lang}"> Page Information </a></p>
         </div>
 
       </div>
