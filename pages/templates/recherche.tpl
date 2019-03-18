@@ -23,9 +23,8 @@
 		{include file="pages/templates/menu.tpl"}
 		{/if}
 		{else}
-		Vous devez vous connecter pour acceder à la recherche.
-		<button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#connexion_modal">Log in</button>
+		<div class="deny">Vous devez vous connecter pour acceder à la recherche.</br>
+		<button class="btn btn-success my-2 my-sm-0 btn-lg" data-toggle="modal" data-target="#connexion_modal">Log in</button>
+		</div>
 		{/if}
 	</body>
-
-	
