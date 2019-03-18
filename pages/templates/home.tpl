@@ -1,8 +1,11 @@
 <div class="corps">
     {if !isset($session.name)}
-    <div class="container1 center-block">
-        <h2>Connectez-vous :</h2>
-        <form action="index.php?page=home&lang={$data['lang']}" method="post">
+    <div class="container center-block">
+        <h1>Bienvenue sur le Site d'acupuncture !</h1>
+        <h2>Vous trouverez tous ce qu'il faut savoir sur les pathologies et leurs symptômes</h2>
+        <img class="img-fluid rounded-circle" src="img/aiguille1.jpg" alt="image acupuncture" />
+        <h2> <button class="btn btn-outline-info btn-lg" data-toggle="modal" data-backdrop="static" data-target="#connexion_modal">Connectez-vous</button> pour avoir accès à tous le site.</h2>
+        <!--<form action="index.php?page=home&lang={$data['lang']}" method="post">
             <div class="form-group">
                 {$form.error}</br>
                 <label for="usr">Name:</label>
@@ -18,7 +21,7 @@
                 <button class="btn btn-primary btn-lg active my-3 my-sm-0" type="submit">s'inscrire</button>
             </div>
         </form>
-
+    -->
     </div>
     {/if}
     {if isset($session.name)}
