@@ -2,6 +2,13 @@
 <div class="modal fade" id="connexion_modal" tabindex="-1" aria-labelledby="connexion_modal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+         $(document).ready(function(){
+          $("#connexion_modal").modal('show');
+         });
+        </script>
       <div class="modal-header">
         <h5 class="modal-title" id="connexion_modal">Connexion</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
