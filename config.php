@@ -3,11 +3,11 @@
 // Database config
 define('DTB_HOST', 'localhost');
 define('DTB_NAME', 'acupuncture');
-define('DTB_LOGIN', 'W-user');
-define('DTB_PASS', 'password');
+define('DTB_LOGIN', 'root');
+define('DTB_PASS', 'toor');
 
 // DIR config
-define('SOURCE_DIR', '/var/www/html/site');
+define('SOURCE_DIR', '/var/www/html/TLI');
 define('PAGES_DIR', 'pages');
 define('TEMPLATES_DIR', 'templates');
 define('CLASS_DIR', 'class');

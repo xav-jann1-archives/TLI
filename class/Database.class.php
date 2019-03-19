@@ -18,19 +18,12 @@ class DB{
         }
     }
 
-    public function get($sql) {
-        $resu = null;
-        foreach($this->db->query($sql) as $row) {
-            $resu[] = $row;
-        }
-        return $resu;
+    public function post($query, $values) {
+        $rest = $this->db->prepare($query);
+        $rest->execute($values);
     }
 
-    public function post($sql) {
-        $this->db->exec($sql);
-    }
-
-    public function get_2($query, $values) {
+    public function get($query, $values) {
         $resu = null;
         $rest = $this->db->prepare($query);
         $rest->execute($values);

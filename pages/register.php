@@ -28,8 +28,9 @@ if (isset($_POST["sent"])) { //TODO test de sent
 
 	if (strlen($form_name) != 0) {
         if (!(preg_match("/[^A-Za-z]/", $form_name))) {
-            $temp = $db->get("SELECT COUNT(*) as exist FROM users WHERE name='$form_name'");
-            
+			$query = "SELECT COUNT(*) as exist FROM users WHERE name = :name";
+            $temp = $db->get($query, [':name' => $form_name]);
+            echo $temp[0][0];
             if ($temp[0][0] != 0) {
                 $check_name = -4;
                 $error_name = "Nom déja utilisé";
@@ -49,7 +50,8 @@ if (isset($_POST["sent"])) { //TODO test de sent
 
 	if (strlen($form_lname) != 0) {
         if (!(preg_match("/[^A-Za-z]/", $form_lname))) {
-            $temp = $db->get("SELECT COUNT(*) as exist FROM users WHERE lname='$form_lname'");
+			$query = "SELECT COUNT(*) as exist FROM users WHERE lname = :lname";
+            $temp = $db->get($query, [':lname' => $form_lname]);
 
             if ($temp[0][0] != 0) {
                 $check_lname = -4;
@@ -94,12 +96,12 @@ if (isset($_POST["sent"])) { //TODO test de sent
 
 	if (strlen($form_mail) != 0) {
 		if (filter_var($form_mail, FILTER_VALIDATE_EMAIL) == true) {
-			$temp = $db->get("SELECT COUNT(*) as exist FROM users WHERE mail='$form_mail'");
+			$query = "SELECT COUNT(*) as exist FROM users WHERE mail=:mail";
+			$temp = $db->get($query, [':mail' => $form_mail]);
 
 			if ($temp[0][0] != 0) {
 				$check_mail = -3;
-                $error_mail = "Vous êtes pas déjà inscrit avec ce mail ?<br />
-                si vous avez oubliez votre mot de passe utilisé le lien 'mot de passe oublié'";
+                $error_mail = "Vous êtes pas déjà inscrit avec ce mail.";
 			}
 		}
 		else {
@@ -122,8 +124,8 @@ if (isset($_POST["sent"])) { //TODO test de sent
 if ($register_flag) {
 	$db = new DB();
 	$hash_pass = hash('sha256', $form_pass);
-    $query = "INSERT INTO `users`(`name`, `lname`, `mail`, `password`) VALUES ('$form_name', '$form_lname', '$form_mail', '$hash_pass')";
-    $db->post($query);
+    $query = "INSERT INTO `users`(`name`, `lname`, `mail`, `password`) VALUES (:name, :lname, :mail, :pass)";
+    $db->post($query, array('name' => $form_name, 'lname' => $form_lname, 'mail' => $form_mail, 'pass' => $hash_pass));
 }
 
 $form['error_name'] = $error_name;

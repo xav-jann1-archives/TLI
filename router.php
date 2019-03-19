@@ -11,6 +11,7 @@ function display_all() {
 	
 	//prepare data sent to tpl
 	$data['lang'] = $lang;
+	$data['page'] = $page;
 	$data['css'] = STYLE_DIR;
 	$tpl->assign('data', $data);
 	$tpl->assign('session', $_SESSION);

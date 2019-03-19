@@ -1,5 +1,5 @@
 <header>
-    {if !isset($session.name)}
+    {if !isset($session.name) && $data.page != 'register'}
     {include file='../templates/popup_connexion.tpl'}
     {/if}
     <nav class="navbar sticky-top navbar-default navbar-expand-sm navbar-light bg-light">

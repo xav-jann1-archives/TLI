@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-18 08:59:06
+/* Smarty version 3.1.33, created on 2019-03-19 19:23:56
   from '/var/www/html/TLI/pages/include/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c8f4fcabc8e54_85727127',
+  'unifunc' => 'content_5c9133bc46f5c7_09881087',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4ea1ef2efead203bff863b820b3d645536279b5e' => 
     array (
       0 => '/var/www/html/TLI/pages/include/header.tpl',
-      1 => 1552895887,
+      1 => 1553019835,
       2 => 'file',
     ),
   ),
@@ -21,10 +21,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../templates/popup_connexion.tpl' => 1,
   ),
 ),false)) {
-function content_5c8f4fcabc8e54_85727127 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c9133bc46f5c7_09881087 (Smarty_Internal_Template $_smarty_tpl) {
 ?><header>
+    <?php if (!isset($_smarty_tpl->tpl_vars['session']->value['name']) && $_smarty_tpl->tpl_vars['data']->value['page'] != 'register') {?>
     <?php $_smarty_tpl->_subTemplateRender('file:../templates/popup_connexion.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
+    <?php }?>
     <nav class="navbar sticky-top navbar-default navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid">
             <!-- Pour que le menu soit responsive on utilise collapse:-->
@@ -68,7 +70,7 @@ function content_5c8f4fcabc8e54_85727127 (Smarty_Internal_Template $_smarty_tpl)
 
                 <?php if (!isset($_smarty_tpl->tpl_vars['session']->value['name'])) {?>
                 
-                <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-backdrop="static" data-target="#connexion_modal">Log in</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-backdrop="static" data-target="#connexion_modal">Connexion</button>
                 
                 <?php }?>
 
@@ -76,7 +78,7 @@ function content_5c8f4fcabc8e54_85727127 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="form-control mr-sm-2" id=name"> <?php echo $_smarty_tpl->tpl_vars['session']->value['name'];?>
  </div>
                 <a href="?page=logout&lang=<?php echo $_smarty_tpl->tpl_vars['data']->value['lang'];?>
-" class="btn btn-outline-success my-2 my-sm-0" role="button" title="log_out">Log out</a>
+" class="btn btn-outline-success my-2 my-sm-0" role="button" title="log_out">Déconnexion</a>
                 <?php }?> 
             </div>
         </div>

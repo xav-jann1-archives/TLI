@@ -15,8 +15,8 @@ if (isset($_POST['sent'])) {
         if (!preg_match("/[^A-Za-z0-9\!\?\.\-_]/", $pwd) && ctype_alpha($name)) {
 
             $db = new DB();
-            $query = "SELECT * FROM `users` WHERE name = '$name'";
-            $user = $db->get($query)[0];
+            $query = "SELECT * FROM `users` WHERE name = :name";
+            $user = $db->get($query, [':name' => $name])[0];
 
             if ($user['name'] == $name && $user['password'] == hash('sha256', $pwd)) {
                 $_SESSION['name'] = $name;
