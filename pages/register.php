@@ -24,13 +24,17 @@ if (isset($_POST["sent"])) { //TODO test de sent
     $form_passc = isset($_POST['pwdc']) ? $_POST['pwdc'] : '';
 	$form_mail = isset($_POST['mail']) ? $_POST['mail'] : '';
 
+	$form['name'] = $form_name;
+	$form['lname'] = $form_lname;
+	$form['mail'] = $form_mail;
+
 //  ----- [ Check name ] --------------------------------------------------
 
 	if (strlen($form_name) != 0) {
         if (!(preg_match("/[^A-Za-z]/", $form_name))) {
 			$query = "SELECT COUNT(*) as exist FROM users WHERE name = :name";
             $temp = $db->get($query, [':name' => $form_name]);
-            echo $temp[0][0];
+            
             if ($temp[0][0] != 0) {
                 $check_name = -4;
                 $error_name = "Nom déja utilisé";
@@ -133,5 +137,7 @@ $form['error_lname'] = $error_lname;
 $form['error_mail'] = $error_mail;
 $form['error_pass'] = $error_pass;
 $tpl->assign('form', $form);
+
+$_SESSION['pop'] = false;
 
 ?>

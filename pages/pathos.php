@@ -9,7 +9,7 @@
     JOIN patho ON patho.idP = symptPatho.idP
     ORDER BY patho.desc ASC";
 
-    $result = $db->get($query);
+    $result = $db->get($query, []) ;
 
 
     $tpl->assign('tableau', $result);

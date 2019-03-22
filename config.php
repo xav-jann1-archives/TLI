@@ -3,8 +3,8 @@
 // Database config
 define('DTB_HOST', 'localhost');
 define('DTB_NAME', 'acupuncture');
-define('DTB_LOGIN', 'root');
-define('DTB_PASS', 'toor');
+define('DTB_LOGIN', 'W-user');
+define('DTB_PASS', 'password');
 
 // DIR config
 define('SOURCE_DIR', '/var/www/html/TLI');

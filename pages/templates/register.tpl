@@ -8,17 +8,17 @@
 		  <form action="index.php?page=register&lang={$data['lang']}" method="post">
 		    <div class="form-group">
 		      <label for="name">Nom (qui sera le nom de connexion):</label>
-					<input type="text" class="form-control center-block" id="name" name="name">
+					<input type="text" class="form-control center-block" id="name" name="name" value={if (isset($form.name))} {$form.name} {else}  '' {/if} >
 					{$form.error_name}
 		    </div>
 		    <div class="form-group">
 		      <label for="lname">Prenom:</label>
-					<input type="text" class="form-control center-block" id="lname" name="lname">
+					<input type="text" class="form-control center-block" id="lname" name="lname" value={if (isset($form.lname))} {$form.lname} {else}  '' {/if}>
 					{$form.error_lname}
 		    </div>
 		    <div class="form-group">
 		      <label for="Mail">Mail:</label>
-					<input type="text" class="form-control center-block" id="mail" name="mail">
+					<input type="text" class="form-control center-block" id="mail" name="mail" value={if (isset($form.mail))} {$form.mail} {else}  '' {/if}>
 					{$form.error_mail}
 		    </div>
 		    <div class="form-group">
